@@ -1,0 +1,73 @@
+% 设置文档类为ctexart，使用12pt字体大小和A4纸张大小
+\documentclass[12pt,a4paper]{ctexart}
+
+% 导入必要的宏包
+\usepackage{graphicx} % 用于插入图片
+\usepackage{float} % 用于控制浮动体的位置
+\usepackage{enumitem} % 用于定制列表
+\usepackage[margin=2cm]{geometry} % 设置页边距为2cm
+
+% 进一步设置页面底部边距为2cm
+\geometry{bottom=2cm}
+
+% 设置文档的标题
+\title{实验报告}
+\date{}
+
+% 开始文档
+\begin{document}
+
+% 插入标题图片
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=6cm]{name.png} % 插入名为name.png的图片，宽度设置为6cm
+\end{figure}
+
+% 插入标题，使用Huge字体大小并加粗
+% \vspace{0.5cm} % 在图片和标题之间插入0.5cm的垂直空间
+\begin{center}
+    \begin{Huge}
+        \textbf{实\hspace{2cm}验\hspace{2cm}报\hspace{2cm}告}
+    \end{Huge}
+\end{center}
+
+% 插入课程学期，居中显示
+\begin{center}
+    \textbf{(2024-2025-1)}
+\end{center}
+
+% 插入基本信息列表
+\section*{}
+\begin{itemize}[leftmargin=*]
+    \item 学生姓名：张翔
+    \item 学生学号：2023010909015
+    \item 指导老师：王玉兰
+    \item 实验地点：KA425
+    \item 实验时间：星期四第9-10节课
+    \item 选课序号：15
+\end{itemize}
+
+% 插入报告目录
+\section*{报告目录}
+\begin{enumerate}[label=\chinese*.]
+    \item 实验课程名称：电路实验II
+    \item 实验项目名称：\hrulefill % 使用横线作为占位符
+    \item 实验目的：
+        \begin{enumerate}[label=\arabic*.]
+            \item 目的
+        \end{enumerate}
+    \item 设计任务与要求：
+        \begin{enumerate}[label=\arabic*.]
+            \item 目的
+        \end{enumerate}
+    \item 实验原理与方案设计：
+    \item 实验内容、测试数据以及结论：
+\end{enumerate}
+
+% 将报告评分置于右下角
+\noindent\vfill % 将内容推到页面底部
+\hfill % 将内容推到页面右侧
+\textbf{报告评分：}\hrulefill % 加粗报告评分并使用横线作为占位符
+
+% 结束文档
+\end{document}
